@@ -1,0 +1,153 @@
+.aboutSection {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    position: fixed;
+}
+
+.aboutSectionGradient {
+    background: rgb(170, 171, 185);
+    background: radial-gradient(circle, rgba(170, 171, 185, 0.19121151878720233) 0%, rgba(193, 192, 231, 1) 100%);
+}
+
+.aboutSectionContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    height: 80vh;
+    transform: translateX(-50%) translateY(-55%);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutSectionContainer>h1 {
+    font: 400 3rem var(--fontlato);
+    color: var(--primarycol);
+    /* margin: 1em; */
+}
+
+.aboutSectionContainer>div {
+    display: flex;
+    width: 100%;
+}
+
+.aboutSectionContainer>div>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.aboutSectionContainer>div>div>p {
+    color: rgba(0, 0, 0, 0.623);
+    font: 100 1rem var(--fonttitillium);
+}
+
+.aboutSectionContainer>div>div>button {
+    margin: 1em 0;
+}
+
+.aboutSectionContainer>div>div>span {
+    font: 100 1rem var(--fontlato);
+    color: rgba(0, 0, 0, 0.616);
+    /* text-align: center; */
+    width: 80%;
+}
+
+.aboutSectionContainer2 {
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.aboutSectionContainer2>h2 {
+    color: rgba(0, 0, 0, 0.623);
+    font: 100 2rem var(--fonttitillium);
+}
+
+.aboutSectionContainer2>a>svg {
+    font-size: 4rem;
+}
+
+.youtubeSvgIcon {
+    color: tomato;
+}
+
+.instagramSvgIcon {
+    color: rgb(144, 81, 202);
+}
+
+/* ............................................................ */
+
+.mailBtn {
+    text-decoration: none;
+    transform: translateX(-100vw);
+    animation: mailBtnAnimation 2s forwards;
+}
+
+.mailBtn>button {
+    text-decoration: none;
+    font: 200 1.2rem var(--fontlato);
+    cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+    padding: 2em;
+}
+
+@keyframes mailBtnAnimation {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutSection {
+        /* position: unset; */
+        /* height: 200vh; */
+    }
+
+    .aboutSectionContainer {
+        width: 90%;
+        height: 100%;
+    }
+
+    .aboutSectionContainer>div {
+        display: block;
+    }
+    
+    .aboutSectionContainer>h1 {
+        font-size: 1rem;
+       
+    }
+
+    .aboutSectionContainer>div>div>p {
+      
+    }
+
+    .aboutSectionContainer>div>div>span {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .aboutSectionContainer2 {
+        border-left: none;
+    }
+
+    .aboutSectionContainer2>h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .mailBtn>button{
+        font-size: 1rem;
+        padding: 0;
+    }
+    .aboutSectionContainer2>a>svg {
+        font-size: 6vmax;
+        margin: 0;
+    }
+}

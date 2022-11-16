@@ -1,0 +1,33 @@
+.updateOrderForm {
+    margin: 5em 0;
+    padding: 3em;
+    /* background-color: white; */
+    border-left: 1px solid black;
+  }
+  
+  .updateOrderForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .updateOrderForm > div > select {
+    padding: 1em 4em;
+    margin: 2em 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9rem var(--fonttitillium);
+    outline: none;
+  }
+  
+  .updateOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+  }

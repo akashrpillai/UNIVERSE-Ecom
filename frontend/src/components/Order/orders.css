@@ -1,0 +1,53 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 7em 0.3em;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+}
+
+#myTableHeading {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font: 400 1.2rem var(--fonttitillium);
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: var(--main1);
+}
+
+.myOrdersTable {
+    background-color: white;
+}
+
+.myOrdersTable div {
+    font: 300 1rem var(--fontlato);
+}
+
+.myOrdersTable a {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+}
+
+.myOrdersTable a:hover {
+    color: var(--main2);
+}
+
+.MuiDataGrid-columnHeader {
+    margin-top: 5px;
+    background-color: var(--primarycol);
+    padding: 1em !important;
+}
+
+.MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+    font: 500 1.1rem var(--fonttitillium) !important;
+}
+
+@media screen and (max-width: 600px) {
+    .myOrdersPage {
+        padding: 5em 0;
+    }
+}

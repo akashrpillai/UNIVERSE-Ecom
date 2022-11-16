@@ -1,0 +1,279 @@
+/*------------------- Empty Cart ------------------------- */
+.emptyCartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.emptyImage img{
+    width: 100%;
+}
+
+.content, .notlogedin {
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+
+}
+
+.content a {
+    margin-top: 1em;
+    font: 600 1rem var(--fontlato);
+    text-decoration: none;
+    color: var(--main1);
+    cursor: pointer;
+}
+
+.notlogedin p:nth-of-type(2) {
+    color: rgba(0, 0, 0, 0.822);
+    margin: 0.6em auto;
+    font: 400 0.9rem var(--fontlato)
+}
+
+.notlogedin>a>button {
+    border: none;
+    background-color: var(--main2);
+    color: white;
+    font: 300 0.9rem var(--fonttitillium);
+    width: 100%;
+    padding: 0.9em;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.notlogedin>a>button:hover {
+    background-color: var(--main1);
+}
+
+
+/* ---------------------------Main Cart------------------- */
+.cart_container {
+    padding: 2em;
+    min-height: 60vh;
+}
+
+.cartheader {
+    width: 90%;
+    background-color: var(--main1);
+    display: grid;
+    margin: auto;
+    grid-template-columns: 4fr 1fr 1fr;
+    color: white;
+    border: 1px solid rgb(240, 6, 6);
+    box-sizing: border-box;
+    font: 600 0.9rem var(--fontlato);
+
+}
+
+.cartheader>h3 {
+    margin: 0.5em;
+
+}
+
+.cartheader>h3:nth-of-type(3) {
+    text-align: end;
+}
+
+.card_container {
+    /* border: 1px solid rgb(213, 160, 160); */
+    height: 8vmax;
+    /*nh*/
+    width: 90%;
+    box-sizing: border-box;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.increment-decrement-btn {
+    /* height: 8vmax; */
+    display: flex;
+    align-items: center;
+}
+
+.increment-decrement-btn>button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.69em;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.2em;
+}
+
+.increment-decrement-btn>input {
+    border: none;
+    padding: 0.6em;
+    width: 3em;
+    text-align: center;
+    outline: none;
+    font: 400 0.8rem "Roboto";
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.increment-decrement-btn>button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.subTotal {
+    display: flex;
+    align-items: center;
+    /* height: 8vmax; */
+    justify-content: flex-end;
+    font: 300 1.2rem var(--fonttitillium);
+    color: rgba(0, 0, 0, 0.821);
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.cartGrossTotal {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    width: 90%;
+    margin: auto;
+}
+
+.cartGrossTotalBox {
+    border-top: 4px solid var(--main1);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    font: 300 1.2rem var(--fontlato);
+}
+
+.checkOutbtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkOutbtn>button {
+    border: none;
+    background-color: var(--main2);
+    color: white;
+    font: 300 0.9rem var(--fonttitillium);
+    width: 50%;
+    padding: 0.9em;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.checkOutbtn>button:hover {
+    background-color: var(--main1);
+}
+
+/* --------------------CartItemCard ----------------- */
+.Cartitemcard {
+    display: flex;
+    padding: 1em;
+    height: 8vmax;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.Cartitemcard>img {
+    width: 6vmax;
+}
+
+.firstpart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5em;
+}
+
+.firstpart>a {
+    font: 600 1.1rem var(--fonttitillium);
+    text-decoration: none;
+    color: black;
+}
+
+.firstpart>span {
+    font: 300 0.9rem var(--fontlato);
+}
+
+.firstpart>button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    text-align: start;
+    color: var(--main3);
+    font: 100 0.9rem var(--fontlato);
+}
+
+@media screen and (max-width:969px) {
+    .Cartitemcard>img {
+        width: 10vmax;
+    }
+
+    .firstpart {
+        margin: 0 4em;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .Cartitemcard {
+        height: 25vmax;
+    }
+
+    .cartheader {
+        /* padding: 0; */
+        /* width: 100%; */
+        /* grid-template-columns: 3fr 1fr 1fr; */
+    }
+
+    .Cartitemcard>img {
+        width: 10vmax;
+    }
+
+    .firstpart {
+        margin: 0 3em;
+    }
+
+    .card_container {
+        height: 25vmax;
+    }
+}
+
+@media screen and (max-width:567px) {
+    .cart_container {
+        padding: 0em;
+    }
+
+    .cartheader {
+        width: 100%;
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+
+    .card_container {
+        grid-template-columns: 3fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .firstpart {
+        margin: 0;
+    }
+
+    .cartGrossTotal {
+        margin-bottom: 5em;
+        width: 100%;
+        grid-template-columns: 0fr 1fr;
+    }
+    .cartGrossTotalBox{
+        border-top: 3px solid var(--main1);
+    }
+    .checkOutbtn>button {
+        margin: auto;
+        width: 90%;
+    }
+}

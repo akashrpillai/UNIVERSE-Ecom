@@ -1,0 +1,56 @@
+.productListContainer {}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  /* box-shadow: none !important; */
+}
+
+.css-yiavyu-MuiBackdrop-root-MuiDialog-backdrop {
+  /* background-color: transparent !important; */
+}
+
+#tableHeadingtwo {
+  font: 500 1.5rem var(--fonttitillium);
+  padding: 0.5em;
+  background-color: var(--primarycol);
+  margin: 0 5em;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 1.5em;
+  margin-bottom: 0;
+  color: white;
+}
+
+.productListTable {
+  background: rgb(170, 171, 185);
+  background: radial-gradient(circle, rgba(170, 171, 185, 0.19121151878720233) 0%, rgba(193, 192, 231, 1) 100%);
+  margin: 0 2.5em;
+}
+
+.productListTable button {
+  color: rgb(255, 255, 255); 
+}
+
+.productListTable a .editbtn,
+.productListTable .deletebtn {
+  color: var(--primarycol);
+  transition: all 0.3s;
+}
+
+.productListTable a:hover {
+  color: var(--main2);
+}
+
+.productListTable .deletebtn:hover {
+  color: rgba(236, 30, 30, 0.897);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  #tableHeadingtwo {
+    margin: 0.5em;
+  }
+
+  .productListTable {
+    margin: 1em;
+  }
+}

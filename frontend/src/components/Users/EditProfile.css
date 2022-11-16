@@ -1,0 +1,272 @@
+.updateProfileContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.updateProfileBox {
+  background-color: white;
+  width: 30vw;
+  height: 75vh;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.updateProfileHeading {
+  text-align: center;
+  font: 600 1.4rem var(--fonttitillium);
+  padding: 0.5em;
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.849);
+}
+
+.updateProfileForm {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 2em;
+  transition: all 0.5s;
+}
+
+/* .signUpForm {
+      transform: translateY(-100%) translateX(-100vmax);
+    } */
+.updateProfileForm>div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.updateProfileForm>div>input {
+  padding: 1em 4em;
+  padding-right: 3em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 5px;
+  font: 300 0.9rem var(--fontlato);
+  outline: none;
+}
+
+.updateProfileForm>div>svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.updateProfileBtn {
+  border: none;
+  background-color: var(--main2);
+  color: white;
+  font: 300 0.9rem var(--fonttitillium);
+  width: 100%;
+  padding: 0.9em;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.updateProfileBtn:hover {
+  background-color: var(--main1);
+}
+
+/* #updateProfileImage {
+  display: inline-block;
+  text-align: center;
+}
+
+#updateProfileImage>img {
+  width: 15vmax;
+  height: 15vmax;
+  border-radius: 100%;
+  margin: 1vmax;
+} */
+
+/*   
+  #updateProfileImage>input {
+    display: flex;
+    padding: 0%;
+  } */
+
+/* #updateProfileImage>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8rem var(--fontlato);
+    transition: all 0.5s;
+    padding: 0 1em;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #updateProfileImage>input::file-selector-button:hover {
+    background-color: var(--main3);
+    color: white;
+  } */
+
+/*1st custom file upload button*/
+
+.editImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.editImage label {
+  display: inline-block;
+  height: 18vmax;
+  width: 18vmax;
+  margin: auto;
+  /* text-align: center; */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid var(--main1);
+  cursor: pointer;
+
+}
+
+.editImage input[ type="file"] {
+  display: none;
+}
+
+.editImage .user {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.editImage .camera {
+  position: absolute;
+  line-height: normal;
+  bottom: 1.2em;
+  right: 3.3em;
+  padding: 0.5rem;
+  background: var(--main2);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 4px solid #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.editImage .camera:hover {
+  background-color: var(--main1);
+}
+
+@media screen and (max-width: 1492px) {
+  .editImage .camera {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .updateProfileContainer {
+    top: 4em;
+  }
+
+  .updateProfileBox {
+    width: 35vw;
+    height: 80vh;
+    
+  }
+
+  .editImage .camera {
+    right: 3em;
+    bottom: 0.7em;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .updateProfileContainer {
+    top: 4em;
+  }
+
+  .updateProfileBox {
+    width: 40vw;
+    height: 85vh;
+  }
+  .editImage label{
+    width: 25vmax;
+    height: 25vmax;
+  }
+  .editImage .camera {
+    right: 2em;
+    bottom: 1.2em
+  }
+}
+/* @media screen and (max-width: 600px){
+  .editImage label{
+    width: 20vmax;
+    height: 20vmax;
+    border: 1px solid red;
+  }
+  .editImage .camera {
+    right: 6em;
+    bottom: 1.2em
+  }
+} */
+@media screen and (max-width: 768px) {
+  .updateProfileContainer {
+    position: sticky;
+  }
+
+  .updateProfileBox {
+    width: 85vw;
+    height: 90vh;
+  }
+  .editImage label{
+    width: 40vmax;
+    height: 40vmax;
+  }
+  .editImage .camera {
+    right: 6.1em;
+    bottom: 1.2em
+  }
+  
+
+}
+
+@media screen and (max-width: 375px) {
+  .updateProfileContainer {
+    background-color: white;
+  }
+  .updateProfileForm{
+    justify-content: unset;
+  }
+  .updateProfileBox {
+    width: 95vw;
+    height: 90vh;
+  }
+  .editImage {
+    height: 40%;
+  }
+  .editImage label{
+    width: 30vmax;
+    height: 30vmax;
+  }
+  .editImage .camera {
+    right: 2em;
+    bottom: 0em
+  }
+ 
+
+}

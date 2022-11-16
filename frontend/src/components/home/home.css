@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&family=Lato&family=Lobster&family=Titillium+Web:wght@300;400&display=swap');
+
+:root {
+    --main1: #062c43;
+    --main2: #054569;
+    --main3: #5591a9;
+    --main4: #9ccddc;
+    --main5: #ced7e0;
+    --primarycol: #1d2630;
+    --logocol:#3a66e5;
+    --fontlato: "lato";
+    --fonttitillium: "titillium web";
+    --fontjosefin: "josefin slab";
+}
+
+/* .banner {
+    background-image: linear-gradient(to right top, #062c43, #06314a, #063551, #053a58, #053f5f, #0d4768, #154f70, #1c5779, #2a6585, #387491, #46829d, #5591a9);
+    height: 100vmin;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner>h1 {
+    font: 400 2.6em "Titillium Web";
+    margin: 0.4em;
+}
+
+.banner>p {
+    font: 400 1.5em "Josefin Slab";
+    margin: 1.5em;
+
+}
+
+.banner>a>button {
+    margin-bottom: 5vmax;
+    border: 2px solid var(--main5);
+    border-radius: 0;
+    padding: 0.5em;
+    cursor: pointer;
+    width: 10vmax;
+    font-size: 1.2rem;
+    font-family: "lato";
+    transition: all 0.2s;
+
+}
+
+.banner>a>button:hover {
+    background-color: var(--main3);
+    color: white;
+}
+
+.banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(100% 74%, 0% 100%, 100% 100%);
+    background-image: linear-gradient(to right, #f2f5f9, #ecf3f9, #e6f1f7, #dff0f5, #d8eef2);
+} */
+
+.homeHeading {
+    font-family: "Titillium Web";
+    font-size: 1.8rem;
+    border-bottom: 1px solid #364753;
+    width: 20vmax;
+    margin: 3em auto;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.container {
+    /* display: flex;
+    margin: 2em auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center; */
+    /* -------------------- */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    width: 80vw;
+    margin: 2em auto;
+}
+
+.productCard {
+    min-width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    /* border: 2px solid blue; */
+}
+
+.productCard>img {
+   width: 14vmax;
+}
+
+.productCard>div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productCard-div-Span {
+    margin: 0.5em;
+    font: 0.8em "lato";
+}
+
+.productCard>p {
+    font-family: "Titillium Web";
+    font-size: 1.1rem;
+    margin: 1em 0.5em;
+    margin-bottom: 0;
+}
+
+.productCard>span {
+    margin: 0.5em;
+    color: var(--main2);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 8px var(--main5);
+    transform: translateY(-1em);
+}
+
+@media screen and (max-width: 1000px) {
+    /* .banner>a>button {
+        padding: 0em;
+        width: 15vmax;
+        margin-top: -1em;
+
+    }
+
+    .banner>p {
+        margin-right: 1em;
+    }
+
+    .banner::after {
+        clip-path: polygon(100% 78%, 0% 100%, 100% 100%);
+        background-image: linear-gradient(to right, #f2f5f9, #ecf3f9);
+
+    } */
+
+    .productCard>div {
+        margin: 0;
+        display: block
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .productCard>p {
+        /* font-size: 1.7vmax; */
+        margin-left: 0
+    }
+
+    .productCard>div {
+        margin: -1px;
+        display: block
+    }
+
+    .productCard>span {
+        margin: 0;
+    }
+
+    .productCard-div-Span {
+        margin: 0;
+
+    }
+}

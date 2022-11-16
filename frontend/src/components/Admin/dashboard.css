@@ -1,0 +1,105 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /* position: relative; */
+    /* position: absolute; */
+}
+
+.dashboardContainer {
+    /* border-left: 3px solid rgba(226, 8, 8);
+    background-color: rgb(255, 255, 255);
+    padding: 3em 1em; */
+    /* padding: 5em;
+    position: absolute;
+    top: 0;
+    left: 260px; */
+}
+
+.dashboardContainer>h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem var(--fonttitillium);
+    text-align: center;
+    border-bottom: 1px solid rgb(174, 136, 136);
+    width: 30%;
+    padding: 0.5em 1em;
+    margin: auto;
+}
+
+.dashboardSummary {
+    margin: 2em 0;
+}
+
+.dashboardSummary>div {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardSummary>div>p {
+    background: #3a65e5e9;
+    background: linear-gradient(58deg, rgba(44, 37, 176, 0.8606793059020483) 0%, rgba(20, 178, 210, 0.9251050762101716) 100%);
+    color: white;
+    font: 300 1.3rem var(--fontlato);
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin: 0 2em;
+}
+
+.dashboardBox2>a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font: 300 2rem var(--fonttitillium);
+    background-image: radial-gradient(circle, #1e9f43, #2ab148, #37c44c, #45d650, #53e953);
+    width: 5vmax;
+    height: 5vmax;
+    margin: 1em;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 1.1em;
+}
+
+.dashboardBox2>a:nth-of-type(1) {
+    background: rgb(6,62,144);
+    background: radial-gradient(circle, rgba(6,62,144,0.9251050762101716) 0%, rgba(20,178,210,0.9251050762101716) 100%);
+}
+.dashboardBox2>a:nth-of-type(3){
+    background-image: radial-gradient(circle, #8f0019, #a4222b, #b9393d, #ce4e51, #e36265);
+}
+.lineChart{
+    width: 80%;
+    margin: auto;
+}
+.doughnutChart{
+    width: 20vmax;
+    margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+    .dashboardContainer>h1{
+        width: 50%;
+    }
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+  
+    .dashboardContainer {
+      border-left: none;
+    }
+    .dashboardSummary > div > p {
+      margin: 0 1em;
+      font-size: 1rem;
+      padding: 0.6em;
+    }
+  
+    .dashboardBox2 > a {
+      /* padding: 0.2em; */
+      /* margin: 1rem; */
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&family=Lato&family=Lobster&family=Titillium+Web:wght@300;400&display=swap');
+
+:root {
+    --darkcolor: #062c43;
+    --main2: #054569;
+    --main3: #5591a9;
+    --main4: #9ccddc;
+    --main5: #ced7e0;
+    --primarycol: #1CB5E0;
+    --fontlato: "lato";
+    --fonttitillium: "titillium web";
+    --fontjosefin: "josefin slab";
+}
+
+footer {
+    box-sizing: border-box;
+    /* position: relative;
+    bottom: 0; */
+    width: 100%;
+    min-height: 40vh;
+    background-color: var(--main2);
+    background-image: url("../../../images/pexels-timelockz-4497038.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+
+.leftfooter {
+    margin-left: 3em;
+    text-align: center;
+    font-family: Titillium Web;
+    font-weight: 400;
+}
+
+.leftfooter>img {
+    width: 10vw;
+    margin: 1vw;
+}
+
+.midfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5em;
+    font-family: lato;
+}
+
+.midfooter>p:nth-of-type(1) {
+    font-family: Lobster;
+    margin: 2em 0;
+    font-size: 1rem;
+}
+
+.midfooter>h1 span {
+    font-family: Josefin Slab;
+}
+
+.rightfooter {
+    display: flex;
+    /* align-items: center; */
+    margin-right: 3em;
+    font-family: Titillium Web;
+    font-weight: 400;
+
+}
+
+.rightfooter>a {
+    margin-left: 1rem;
+    width: 2em;
+    transition: transform 0.3s;
+
+}
+
+.rightfooter>a:nth-child(2) {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 30%;
+    margin-right: -7px;
+    text-align: center;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.rightfooter>a:hover {
+    transform: translateY(-0.5em);
+}
+
+@media screen and (max-width: 1300px) {
+    .midfooter {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .midfooter {
+        margin-left: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .rightfooter {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1rem;
+
+    }
+
+    .rightfooter>a {
+        width: 5em;
+        cursor: pointer;
+    }
+
+    .rightfooter>a:nth-child(2) {
+        margin-left: 32px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 0.6em;
+
+    }
+
+    .rightfooter {
+        flex-direction: row;
+    }
+
+    .rightfooter>a {
+        width: 1rem;
+        margin-left: 2rem;
+    }
+
+    .leftfooter>img {
+        width: 10vh;
+    }
+
+    .rightfooter>a:nth-child(2) {
+        width: 3.3em;
+        height: 3.3em;
+        margin-right: -20px;
+    }
+}

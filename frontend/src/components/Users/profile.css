@@ -1,0 +1,144 @@
+.profileContainer {
+
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(170, 171, 185);
+    background: radial-gradient(circle, rgba(170, 171, 185, 0.19121151878720233) 0%, rgba(193, 192, 231, 1) 100%);
+}
+
+.profileBox {
+    margin-top: 5vh;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(170, 171, 185);
+    box-shadow: 19px 17px 16px -2px rgba(15, 15, 15, 0.92);
+    -webkit-box-shadow: 19px 17px 16px -2px rgba(15, 15, 15, 0.92);
+    -moz-box-shadow: 19px 17px 16px -2px rgba(15, 15, 15, 0.92);
+
+    /* background-image: linear-gradient(to right, #dee6f0, #dce5ef, #dae3ee, #d8e2ed, #d6e1ec); */
+    /* border: 1px solid rebeccapurple; */
+}
+
+.profileBox>div.displayPicture {
+    position: relative;
+    /* width: 50%; */
+    text-align: center;
+}
+
+div.displayPicture>h2 {
+    padding: 1em;
+    font: 600 1.5rem var(--fontlato);
+
+}
+
+.profileBox>div.displayPicture img {
+    height: 15vmax;
+    width: 15vmax;
+    border-radius: 100%;
+    border: 1px solid var(--main2);
+}
+
+div.displayPicture a>svg {
+    font-size: 1.8rem;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.878);
+    bottom: 0.8em;
+    right: 0em;
+    transition: all 0.3s;
+}
+
+div.displayPicture a>svg:hover {
+    transform: scale(1.5);
+}
+
+.userinfo {
+    width: 60%;
+    font-family: var(--fonttitillium);
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .email, .joinDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name>p, .email>p, .joinDetails>p {
+    font-size: 1.1rem;
+    color: var(--main2);
+}
+
+div.links {
+    width: 60%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fontlato);
+}
+
+div.links a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.888);
+}
+
+
+div.orders, div.forgetpassword {
+    display: flex;
+    align-items: center;
+
+
+}
+
+@media screen and (max-width:969px) {
+    .userinfo {
+        width: 80%;
+    }
+
+    div.links {
+        width: 80%;
+    }
+
+    div.displayPicture a>svg {
+        right: 0.8em;
+        bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .profileBox {
+        width: 90%;
+    }
+
+    div.displayPicture a>svg {
+        right: 0.8em;
+        bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .profileBox {
+        width: 100%;
+        margin: 0;
+    }
+
+    .userinfo {
+        width: 90%;
+    }
+
+    div.links {
+        width: 90%;
+    }
+
+    div.displayPicture a>svg {
+        right: 1.5em;
+        bottom: 0.5em;
+    }
+}
