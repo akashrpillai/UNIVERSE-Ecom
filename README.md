@@ -216,5 +216,5 @@ Hi! My name is **Akash R Pillai** and this is my Ecommerce Project.
 
 ![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/dashboard2.png?raw=true)
 
-## view all the screenshots in the screenshots folder
-[here](screenshots/)
+## view all the screenshots of the project [here](screenshots/)
+
