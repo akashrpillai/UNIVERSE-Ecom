@@ -176,3 +176,45 @@ Hi! My name is **Akash R Pillai** and this is my Ecommerce Project.
 - "stripe": "^10.14.0",
 
 - "validator": "^13.7.0"
+
+
+# Screenshots
+
+## Homepage 
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/homepage1.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/homepage2.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/homepage3.png?raw=true)
+
+## Allproducts / productdetails
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/allporducts.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/productdetails.png?raw=true)
+
+## Add to cart
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/cart.png?raw=true)
+
+## Myprofile
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/myprofile.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/profile2.png?raw=true)
+
+## login/logout
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/login.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/logout.png?raw=true)
+
+## Admin Dashboard
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/dashboard.png?raw=true)
+
+![App Screenshot](https://github.com/akashrpillai/UNIVERSE-Ecom/blob/master/screenshots/dashboard2.png?raw=true)
+
+## view all the screenshots in the screenshots folder
+[here](screenshots/)
